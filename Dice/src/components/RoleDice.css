@@ -1,0 +1,14 @@
+.dice-container {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dice-container .dice {
+  cursor: pointer;
+}
+
+.dice-container p {
+  font-size: 24px;
+}

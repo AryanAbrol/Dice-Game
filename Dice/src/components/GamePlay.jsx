@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import React, { useState } from "react";
 import NumberSelector from "./NumberSelector";
 import TotalScore from "./TotalScore";
 import RoleDice from "./RoleDice";
-import { useState } from "react";
-import { Button, OutlineButton } from "../styled/Button";
+import { Button, OutlineButton } from "../style/Button";
 import Rules from "./Rules";
+import './GamePlay.css';
 
 const GamePlay = () => {
   const [score, setScore] = useState(0);
@@ -24,7 +24,7 @@ const GamePlay = () => {
     }
 
     const randomNumber = generateRandomNumber(1, 7);
-    setCurrentDice((prev) => randomNumber);
+    setCurrentDice(randomNumber);
 
     if (selectedNumber === randomNumber) {
       setScore((prev) => prev + randomNumber);
@@ -40,8 +40,8 @@ const GamePlay = () => {
   };
 
   return (
-    <MainContainer>
-      <div className="top_section">
+    <main className="main-container">
+      <div className="top-section">
         <TotalScore score={score} />
         <NumberSelector
           error={error}
@@ -59,26 +59,8 @@ const GamePlay = () => {
       </div>
 
       {showRules && <Rules />}
-    </MainContainer>
+    </main>
   );
 };
 
 export default GamePlay;
-
-const MainContainer = styled.main`
-  padding-top: 70px;
-  .top_section {
-    display: flex;
-    justify-content: space-around;
-    align-items: end;
-  }
-  .btns {
-    margin-top: 40px;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-`;
