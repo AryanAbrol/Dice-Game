@@ -1,5 +1,5 @@
 import React from "react";
-import './Rules.css'; // Import the CSS file
+import '../style/Rules.css'; // Import the CSS file
 
 const Rules = () => {
   return (

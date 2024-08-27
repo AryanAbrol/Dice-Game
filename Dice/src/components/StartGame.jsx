@@ -1,6 +1,6 @@
 import React from "react";
-import { Button } from "../style/Button";
-import './StartGame.css'; // Import the CSS file
+import { Button } from "./Button";
+import '../style/StartGame.css'; // Import the CSS file
 
 const StartGame = ({ toggle }) => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import './TotalScore.css'; // Import the CSS file
+import '../style/TotalScore.css'; // Import the CSS file
 
 const TotalScore = ({ score }) => {
   return (

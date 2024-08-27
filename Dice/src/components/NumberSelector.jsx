@@ -1,5 +1,5 @@
 import React from "react";
-import './NumberSelector.css'; 
+import '../style/NumberSelector.css'; 
 
 const NumberSelector = ({
   setError,

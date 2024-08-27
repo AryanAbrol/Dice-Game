@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import NumberSelector from "./NumberSelector";
 import TotalScore from "./TotalScore";
 import RoleDice from "./RoleDice";
-import { Button, OutlineButton } from "../style/Button";
+import { Button, OutlineButton } from "./Button";
 import Rules from "./Rules";
-import './GamePlay.css';
+import '../style/GamePlay.css';
 
 const GamePlay = () => {
   const [score, setScore] = useState(0);

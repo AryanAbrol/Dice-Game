@@ -1,5 +1,5 @@
 import React from "react";
-import './RoleDice.css';
+import '../style/RoleDice.css';
 
 const RoleDice = ({ roleDice, currentDice }) => {
   return (
