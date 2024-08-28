@@ -1,9 +1,9 @@
 import React from 'react';
 import '../style/Button.css'; 
 
-export const Button = ({ children, className = '', ...props }) => {
+export const Button = ({ children, ...props }) => {
   return (
-    <button className={`button ${className}`} {...props}>
+    <button className={`button `} {...props}>
       {children}
     </button>
   );
